@@ -1,0 +1,2 @@
+# ConfigurableAngularjsTable
+Configurable angularjs table
