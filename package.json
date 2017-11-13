@@ -1,0 +1,32 @@
+{
+    "name": "angular2-starter",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "webpack --progress",
+        "build:prod": "webpack -p --progress",
+        "postinstall": "typings install",
+        "serve": "webpack-dev-server --inline --progress"
+    },
+    "dependencies": {
+        "@angular/common": "4.4.0-RC.0",
+        "@angular/compiler": "4.4.0-RC.0",
+        "@angular/core": "4.4.0-RC.0",
+        "@angular/http": "4.4.0-RC.0",
+        "@angular/platform-browser": "4.4.0-RC.0",
+        "@angular/platform-browser-dynamic": "4.4.0-RC.0",
+        "@angular/router": "4.4.0-RC.0",
+        "awesome-typescript-loader": "^3.2.3",
+        "core-js": "2.5.1",
+        "reflect-metadata": "^0.1.10",
+        "rxjs": "5.4.3",
+        "zone.js": "0.8.17"
+    },
+    "devDependencies": {
+        "html-webpack-plugin": "^2.30.1",
+        "ts-loader": "^2.3.6",
+        "typescript": "^2.5.2",
+        "typings": "^2.1.1",
+        "webpack": "^3.5.6",
+        "webpack-dev-server": "^2.7.1"
+    }
+}
