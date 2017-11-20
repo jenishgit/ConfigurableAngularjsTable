@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My App with webpack...</h1>'
+    templateUrl: './table.html'
 })
 export class AppComponent{
 

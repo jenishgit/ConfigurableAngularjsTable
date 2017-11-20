@@ -11,9 +11,21 @@ module.exports = {
     module:{
         loaders:[
             {
-                test: /\.ts$/, 
-                loader: 'awesome-typescript-loader'
-            }
+                test: /\.ts$/,
+                loaders: ['awesome-typescript-loader', 'angular2-template-loader?keepUrl=false'],
+                exclude: [/\.(spec|e2e)\.ts$/]
+              },
+              /* Embed files. */
+              { 
+                test: /\.(html|css)$/, 
+                loader: 'raw-loader',
+                exclude: /\.async\.(html|css)$/
+              },
+              /* Async loading. */
+              {
+                test: /\.async\.(html|css)$/, 
+                loaders: ['file?name=[name].[hash].[ext]', 'extract']
+              }
         ]
     },
     plugins:[
