@@ -1,6 +1,9 @@
 import 'core-js';
 import 'reflect-metadata';
 import 'zone.js/dist/zone';
+import 'jquery';
+import 'bootstrap/dist/js/bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { AppComponent } from './app/app.component';
 import {Component, NgModule, } from "@angular/core";
 import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
