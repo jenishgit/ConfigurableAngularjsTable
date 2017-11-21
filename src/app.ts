@@ -8,10 +8,13 @@ import { AppComponent } from './app/app.component';
 import {Component, NgModule, } from "@angular/core";
 import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
 import {BrowserModule} from '@angular/platform-browser';
+import {HttpModule} from '@angular/http'
+import {DataService} from './app/data.service';
 @NgModule({
-    imports:      [BrowserModule], // import Angular's BrowserModule
+    imports:      [BrowserModule, HttpModule], // import Angular's BrowserModule
     bootstrap:    [AppComponent],  // indicate the bootstrap component
-    declarations: [AppComponent]
+    declarations: [AppComponent],
+    providers: [DataService]
 })
 export class AppModule {}
 
