@@ -1,6 +1,6 @@
 import { Column } from './Column'
 
-export class TableConfiguration{
+export class GridConfiguration{
     columns: Column[];
     loadFunction: Function;
 }

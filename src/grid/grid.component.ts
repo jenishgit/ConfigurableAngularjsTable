@@ -1,15 +1,15 @@
-import { TableConfiguration } from './configuration/TableConfiguration';
+import { GridConfiguration } from './configuration/GridConfiguration';
 import { Component, OnInit, Input } from '@angular/core'
 
 @Component({
-    selector: 'extended-table',
-    templateUrl: './table.html'
+    selector: 'ng-grid',
+    templateUrl: './grid.html'
 })
-export class TableComponent implements OnInit{
+export class GridComponent implements OnInit{
     @Input()
     data : any[];
     @Input()
-    configuration: TableConfiguration;
+    configuration: GridConfiguration;
     constructor(){
         
     }

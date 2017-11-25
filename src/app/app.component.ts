@@ -1,5 +1,5 @@
-import { Column } from '../table/configuration/Column';
-import { TableConfiguration } from '../table/configuration/TableConfiguration';
+import { Column } from '../grid/configuration/Column';
+import { GridConfiguration } from '../grid/configuration/GridConfiguration';
 import { Component, OnInit } from '@angular/core';
 import { IData } from './Data'
 import { DataService } from './data.service'
@@ -11,7 +11,7 @@ import { DataService } from './data.service'
 export class AppComponent implements OnInit{
     
     data : IData[];
-    configuration: TableConfiguration;
+    configuration: GridConfiguration;
 
     constructor(private readonly _dataService: DataService) {
         
@@ -22,7 +22,7 @@ export class AppComponent implements OnInit{
     }
 
     ngOnInit(): void {
-        this.configuration = new TableConfiguration();
+        this.configuration = new GridConfiguration();
         this.configuration.columns = [
             new Column('eyeColor', 'Eye Color', typeof('')),
             new Column('name', 'Name', typeof('')),
