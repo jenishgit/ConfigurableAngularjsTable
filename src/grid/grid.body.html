@@ -1,0 +1,5 @@
+<tr *ngFor="let dataItem of data">
+    <td *ngFor="let column of columns">
+        {{dataItem[column.name]}}
+    </td>
+</tr>
